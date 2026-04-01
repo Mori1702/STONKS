@@ -2,3 +2,6 @@ flask
 yfinance
 pandas
 gunicorn
+flask-login
+flask-sqlalchemy
+werkzeug
