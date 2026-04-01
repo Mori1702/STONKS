@@ -157,7 +157,7 @@ def home():
                      color = "sell"
                  else:
                      color = "neutral"
-           else:
+            else:
                action = "KEIN SIGNAL"
                level = "Zu geringe Abweichung"
                color = "neutral"
