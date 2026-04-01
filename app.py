@@ -22,7 +22,7 @@ def init_db():
    with sqlite3.connect(DB_NAME) as conn:    
       cursor = conn.cursor()
        # Benutzer-Tabelle
-       cursor.execute('''
+      cursor.execute('''
            CREATE TABLE IF NOT EXISTS users (
                id INTEGER PRIMARY KEY AUTOINCREMENT,
                email TEXT UNIQUE NOT NULL,
