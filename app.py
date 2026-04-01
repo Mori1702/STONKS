@@ -30,7 +30,7 @@ def init_db():
            )
        ''')
        # Aktien-Tabelle (welcher User verfolgt welche Aktie)
-       cursor.execute('''
+      cursor.execute('''
            CREATE TABLE IF NOT EXISTS user_stocks (
                id INTEGER PRIMARY KEY AUTOINCREMENT,
                user_id INTEGER NOT NULL,
