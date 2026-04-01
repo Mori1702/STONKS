@@ -19,8 +19,8 @@ DB_NAME = "stocks_app.db"
 # 1. DATENBANK SETUP
 # ==========================================
 def init_db():
-   with sqlite3.connect(DB_NAME) as conn:
-       cursor = conn.cursor()
+   with sqlite3.connect(DB_NAME) as conn:    
+      cursor = conn.cursor()
        # Benutzer-Tabelle
        cursor.execute('''
            CREATE TABLE IF NOT EXISTS users (
@@ -39,6 +39,8 @@ def init_db():
            )
        ''')
        conn.commit()
+#FIX-VERSUCH
+init_db()
 
 # ==========================================
 # 2. AKTIEN-LOGIK (yfinance)
