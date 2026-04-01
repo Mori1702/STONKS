@@ -149,7 +149,7 @@ def send_daily_emails():
 
 # Scheduler einrichten
 scheduler = BackgroundScheduler()
-scheduler.add_job(func=send_daily_emails, trigger="cron", hour=18, minute=0)
+scheduler.add_job(func=send_daily_emails, trigger="interval", hours=3)
 scheduler.start()
 
 # ==========================================
